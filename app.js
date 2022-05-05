@@ -5,8 +5,6 @@ const port = 3000
 
 // setting template engine 
 //app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
-
-/// 疑問: 助教想問在bash上一直出現 TypeError: exphbs is not a function ， 在stack overflow 查詢到此解方，不太清楚為何要在exphbs上再加上engine??
 app.engine('hbs', exphbs.engine({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 
